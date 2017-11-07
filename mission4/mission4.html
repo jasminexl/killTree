@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>登录</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background-color: #eff0f4;
+			color: #fff;
+			font-size: 14px;
+			overflow: hidden;
+		}
+		a {
+			background-color: #5fc0cd;
+			color: #fff;
+			text-decoration: none;
+		}
+		h3 {
+			background-color: #5fc0cd;
+			text-align: center;
+			height: 45px;
+			line-height: 45px;
+		}
+		.close {
+			position: absolute;
+			left: 10px;
+			top: 10px;
+		}
+		.signin {
+			position: absolute;
+			right: 10px;
+			top: 10px;
+		}
+
+		.text {
+			margin-top: 10px;
+			width: 100%;
+			background-color: #fff;
+		}
+		.text input {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 20px 0 20px 90px;
+            border: none;
+            outline: none;
+		}
+		.text input[type=text] {
+			background: url(image/icon_mobile.png) no-repeat;
+			background-size: 64px 54px;
+		}
+		.text input[type=password] {
+			background: url(image/icon_pwd.png) no-repeat;
+			background-size: 64px 54px;
+		}
+		.btn {
+			margin-top: 10px;
+			width: 100%;
+			background-color: #5fc0cd;
+		}
+		.btn input {
+			background-color: #5fc0cd;
+			color: #fff;
+			margin: 0 auto;
+			padding: 16px 0px;
+			width: 100%;
+			border: none;
+			font-size: 20px;
+			letter-spacing: 10px;
+		}
+		.forget a {
+			background-color: #eff0f4;
+			color: #5fc0cd;
+			text-decoration: underline;
+			float: right;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="#" class="close">关闭</a>
+		<a href="#" class="signin">注册</a>
+		<h3>登录</h3>
+	</header>
+	<section>
+		<form>
+			<div class="text"><input type="text" placeholder="请输入手机号" /></div>
+			<div class="text"><input type="password" placeholder="请输入密码" /></div>
+			<div class="btn"><input type="submit" value="登录" /></div>
+			<div class="forget"><a href="#">忘记密码</a></div>
+		</form>
+	</section>
+
+</body>
+</html>

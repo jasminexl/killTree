@@ -19,6 +19,7 @@
 			background-color: orange;
 			border-radius: 10px;
 		}
+
 	</style>
 </head>
 <body>
@@ -42,3 +43,75 @@
 
 </body>
 </html>
+
+* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background-color: #eff0f4;
+			color: #fff;
+			font-size: 15px;
+		}
+		.header {
+			background-color: #5fc0cd;
+			height: 100px;
+		}
+		.header div {
+			position: absolute;
+		}
+		.header div:first-child {
+			top: 15px;
+			left: 20px;
+		}
+		.header div:nth-of-type(2) {
+			font-size: 17px;
+			font-weight: bold;
+			top: 15px;
+			left: 50%;
+			margin-left: -17px;
+		}
+		.header div:last-child {
+			top: 15px;
+			right: 20px;
+		}
+		
+		<div class="header">
+		<div>关闭</div>
+		<div>登录</div>
+		<div>注册</div>
+	</div>
+	<div>
+		<input type="username" name="">
+	</div>
+	<div>
+		<input type="password" name="">
+	</div>
+	<div>
+		
+	</div>
+	<footer>
+		
+	</footer>
+
+
+	section div {
+			margin-top: 10px;
+			background-color: #fff;
+		}		
+		input {
+			width: 100%;
+			border: none;
+			padding: 20px 0px 20px 100px;
+		}
+		input[type=number] {
+			background: url("icon_mobile.png") no-repeat;
+			background-size: 71px 60px;
+		}
+		input[type=password] {
+			background: url("icon_pwd.png") no-repeat;
+			background-size: 71px 60px;
+		}
+		input[type=submit] {
+			background-color: #5fc0cd;
+		}

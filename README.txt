@@ -1,7 +1,7 @@
 # killTree
 
 # 10.30
-任务1:九宫格——用html+css制作一个网页
+Mission1：九宫格——用html+css制作一个网页
 环境搭建：
 Sublime&Chrome
 知识学习：
@@ -54,9 +54,53 @@ http://www.cnblogs.com/heyach/p/6494872.html?utm_source=itdadao&utm_medium=refer
 感谢师兄师姐在知乎上的回答！
 https://www.zhihu.com/question/41430703
 
+#11.3
+mission2：认识开发必备工具
+github&git&svn
+常用git命令：
+1.git init(把这个目录变成Git可以管理的仓库)
+2.git add <file>
+3.git commit -m "本次提交的说明"
+4.git status(显示仓库当前的状态)
+5.git diff(查看仓库具体变化)
+6.git log(显示从最近到最远的提交日志)
+7.git reset --hard commit_id(回到commit_id版本)
+8.git reflog（查看命令历史，以便确定要回到未来的哪个版本）
+9.git checkout -- file(用版本库里的版本替换工作区的版本)
+10.git rm <file>(删除文件)
+*工作区->add->暂存区->commit->版本库
 
+mission3:魔镜介绍页——一个最简单的移动端页面
+1.margin&padding
+http://www.cnblogs.com/linjiqin/p/3556497.html(里面讲的很形象)
+2.px&em&rem
+px-像素Pixel,相对长度单位,是相对于显示器屏幕分辨率而言的.
+em-相对长度单位,相对于当前对象内文本的字体尺寸.如当前对行内文本的字体尺寸未被人为设置,则相对于浏览器的默认尺寸.(会继承父级元素的字体大小)
+rem-CSS3新增的一个相对单位,相对的只是HTML根元素.
+3.居中
+水平居中：
+-text-align: center;//在块级父容器中让行内元素居中
+-width:100px;margin-left:auto;margin-right:auto;//有宽度的容器居中
+-flex布局
+垂直居中：
+-等值的padding-top和padding-bottom
+-等值的height和line-height(文本不会换行)
+-flex布局
+*详细水平垂直居中方法介绍及实例(http://www.w3cplus.com/css/centering-css-complete-guide.html)
+4.flex布局
+阮一峰的网络日志(http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 
+mission4:登录页——一个最常见的移动端页面
+1.position
+-static(默认)
+-relative(元素会根据top,left,bottom,right进行偏移,关键点是它原本的空间仍然保留)
+-absolute(元素会脱离文档流,并且不占有原本的空间,而且不论元素是行内元素还是块级元素,都会生成一个块级框)
+-fixed(表现方式类似于absolute,但是相比于absolute相对于不确定的父元素进行偏移,fixed就是相对于浏览器窗口进行偏移)
+*非根元素的包含块,如果该元素的position是relative或static，它的包含块是最近的块级框;如果该元素的position是absolute,则包含块为最近的position不是static的祖先元素.
+2.input表单
 
+3.css选择器优先级
+!important > 行内样式 > ID选择器 > 类选择器 > 标签 > 通配符 > 继承 > 浏览器默认属性
 
 
 
