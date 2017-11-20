@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>主页</title>
+	<style type="text/css">
+		body, header, h4 {
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #5fc0cd;
+		}
+		h4 {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			text-align: center;
+			color: #fff;
+		}
+		.return {
+			position: absolute;
+			top: 15px;
+			left: 10px;
+		}
+
+		/*.container {
+			background: url(image/background.png) no-repeat 100% 100%;
+			width: 100%;
+			color: #fff;
+		}*/
+		.intro {
+			padding-top: 50px;
+			padding-bottom: 50px;
+			background: url(image/background.png) no-repeat 100% 100%;
+			width: 100%;
+			color: #fff;
+		}
+		.intro > img {
+			position: absolute;
+			top: 80px;
+			left: 30px;
+		}
+		/*.content {
+			position: absolute;
+			top: 50px;
+			left: 120px;
+		}*/
+		.content {
+			display: inline-block;
+			padding-left: 120px;
+		}
+		.nav {
+			-webkit-font-smoothing: antialiased;
+		}
+		.nav:after {
+			width: 8px;
+  height: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  box-sizing: border-box;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -75%) rotate(45deg);
+  -webkit-transform: translate(-50%, -75%) rotate(45deg);
+  -ms-transform: translate(-50%, -75%) rotate(45deg);
+  background-color: transparent;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h4>个人主页</h4>
+		<a href="#"><img class="return" src="image/return.png" width="12px" height="12px"></a>
+	</header>
+	<main>
+		<div class="intro">
+			<img class="avatar" src="image/avatar.png" width="60px" height="60px">
+			<div class="content">
+				<span>王小明&nbsp55岁</span>
+				<div>
+				    <img src="image/locate.png" width="10px" height="15px">
+				    <span>北京·四方·宝芝林</span>
+				</div>
+			</div>
+        </div>
+        <div class="skill">
+            <div class="title">
+            	<span>专业技能</span>
+            	<i class="nav"></i>
+            </div>
+        </div>
+	</main>
+
+</body>
+</html>
