@@ -14,5 +14,12 @@ http://www.zhangxinxu.com/wordpress/2013/06/%E4%BC%AA%E5%85%83%E7%B4%A0-%E8%A1%A
 
 5.页面出现滑块可以在Chrome里查看源代码（可以看出哪个元素溢出）
 
+#11.24
+1.一个浮动的div里有一个div，需要上移一点，但其位置不知怎么改变
+--设position:relative再改变top.right.left.bottom
 
+2.<div><input></div>结构里面div.width=100%&&input.width=100%,若有input.padding-left则溢出
+--不设input.width=100%(设95% or other)
 
+3.两个logo中间有一条竖线
+--前一个logo设padding&&border(eg:border-right: 1px solid #adadad;)
