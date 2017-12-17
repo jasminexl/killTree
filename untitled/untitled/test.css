@@ -1,0 +1,175 @@
+body,header.div,img,span,a,nav,ul,li {
+    margin: 0;
+    padding: 0;
+}
+body,html {
+    height: 100%;
+}
+body {
+    font-size: 14px;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #F2F2F2;
+}
+/*header*/
+body > header {
+    background-color: #313340;
+}
+.logo {
+    padding: 15px 30px;
+    font-size: 0px;
+}
+.exit {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+.exit span {
+    height: 28px;
+    line-height: 28px;
+    color: #F2F2F2;
+    padding-right: 10px;
+}
+/*左侧导航条*/
+.nav {
+    float: left;
+    width: 200px;
+    height: 100%;
+    background-color: #454A5C;
+}
+.nav li {
+    list-style-type: none;
+    display: block;
+    color: #F2F2F2;
+    padding: 0 30px;
+    border-bottom: 1px solid #353747;
+}
+.nav a {
+    display: block;
+    padding: 10px 0 10px 30px;
+}
+.subnav li {
+    position: relative;
+    left: -30px;
+    width: 140px;
+    background-color: #353747;
+    border-style: none;
+}
+.subnav li:first-child {
+    background-color: #EE6A6F;
+}
+.subnav li:hover {
+    background-color: #EE6A6F;
+}
+/*右侧主体*/
+.main {
+
+    background-color: #FEFFFE;
+}
+.container {
+    margin-left: 200px;
+}
+/*主体header*/
+.main header {
+    height: 50px;
+    margin: 10px;
+    padding-left: 40px;
+    border: 1px solid #FFE3C0;
+    border-radius: 10px;
+    background-color: #FEFFFE;
+}
+.main a {
+    background-color: #FEFFFE;
+    color: black;
+}
+.main span {
+    height: 50px;
+    line-height: 50px;
+    background-color: #FEFFFE;
+    color: black;
+}
+/*主体info*/
+.info {
+    margin: 10px;
+    width: 100%;
+    border: 1px solid #FFE3C0;
+    border-radius: 10px;
+    background-color: #FEFFFE;
+}
+nav {
+    margin: 10px 0 10px 40px;
+}
+nav li {
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+.all {
+    margin: 10px;
+    padding-left: 30px;
+}
+.option {
+    display: inline-block;
+    width: 90%;
+}
+.query {
+    display: inline;
+    width: 10%;
+}
+.option span {
+    padding-right: 8px;
+}
+.option input {
+    margin-right: 20px;
+    line-height: 30px;
+    height: 30px;
+    width: 120px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+::-webkit-inner-spin-button {
+    visibility: hidden;
+}
+::-webkit-calendar-picker-indicator {
+    border-left: 1px solid #ccc;
+}
+select {
+    margin-right: 20px;
+    line-height: 30px;
+    height: 30px;
+    width: 60px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.all table {
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

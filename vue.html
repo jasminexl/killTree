@@ -5,6 +5,7 @@
 	<script src="https://unpkg.com/vue"></script>
 </head>
 <body>
+<<<<<<< HEAD
 
 <div id="app">
 {{ message }}
@@ -108,6 +109,30 @@ var app4 = new Vue({
 })
 
 
+=======
+	<div id="app">
+		{{ message }}
+	</div>
+	<div id="app-2">
+		<span v-bind:title="message">
+			鼠标悬停可查看提示信息
+		</span>
+	</div>
+	
+<script>
+	var app = new Vue({
+		el: "#app",
+		data: {
+			message: "Hello Vue!"
+		}
+	})
+	var app2 = new Vue({
+		el: "#app-2",
+		data: {
+			message: "页面加载于" + new Date().toLocaleString()
+		}
+	})
+>>>>>>> f033dfa17f080cd89a7d7e579929c1e672002207
 </script>
 </body>
 </html>
