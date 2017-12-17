@@ -5,6 +5,111 @@
 	<script src="https://unpkg.com/vue"></script>
 </head>
 <body>
+<<<<<<< HEAD
+
+<div id="app">
+{{ message }}
+</div>
+
+<div id="app2">
+<span v-bind:title="message">查看信息</span>
+</div>
+
+<div id="app3">
+<p>{{ message }}</p>
+<button v-on:click="reverse">逆转</button>
+</div>
+
+<div id="app4">
+<p>
+{{ message }}
+</p>
+<input v-model="message">
+</div>
+
+<div id="app5">
+<ol>
+<todo-item v-for="item in todoList" v-bind:todo="item" v-bind:key="item.id">
+</todo-item>
+</ol>
+</div>
+
+<app-layout>
+<h1 slot="header">页面标题</h1>
+
+<p>段落</p>
+<p>段落2</p>
+
+<p slot="footer">尾部</p>
+</app-layout>
+
+<script type="text/javascript">
+
+Vue.component("app-layout", {
+	template: "<div class=\"container\">\
+<header>\
+<slot name=\"header\"></slot>\
+</header>\
+<main>\
+<slot></slot>\
+</main>\
+<footer>\
+<slot name=\"footer\"></slot>\
+</footer>\
+</div>"
+})
+
+
+Vue.component("todo-item", {
+	props: ["todo"],
+	template: "<li>{{ todo.text }}</li>"
+})
+var app5 = new Vue({
+	el: "#app5",
+	data: {
+		todoList: [
+		{ id: 0, text: "apple"},
+		{ id: 1, text: "banana"},
+		{ id: 2, text: "what you want"}
+		]
+	}
+})
+
+var app = new Vue({
+	el: "#app",
+	data: {
+		message: "Hello VUE!"
+	}
+})
+
+var app2 = new Vue({
+	el: "#app2",
+	data: {
+		message: "加载于" + new Date().toLocaleString()
+	}
+})
+
+var app3 = new Vue({
+	el: "#app3",
+	data: {
+		message: "HIIII"
+	},
+	methods: {
+		reverse: function () {
+			this.message = this.message.split("").reverse().join("")
+		}
+	}
+})
+
+var app4 = new Vue({
+	el: "#app4",
+	data: {
+		message: "Hello"
+	}
+})
+
+
+=======
 	<div id="app">
 		{{ message }}
 	</div>
@@ -27,6 +132,7 @@
 			message: "页面加载于" + new Date().toLocaleString()
 		}
 	})
+>>>>>>> f033dfa17f080cd89a7d7e579929c1e672002207
 </script>
 </body>
 </html>
