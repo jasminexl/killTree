@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+    .nav {
+        display: none;
+    }
+    </style>
+</head>
+<body>
+<ul>
+<li>
+<a onclick="add()">11111</a>
+<ul class="nav" id="1">
+<li>2222</li>
+<li>2222</li>
+</ul>
+</li>
+<li>
+<a>11111</a>
+<ul class="nav">
+<li>2222</li>
+<li>2222</li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript">
+var add = function(){
+    let sub = document.getElementById('1')
+        if (sub.style.display === 'block') {
+          sub.style.display = 'none'
+        } else {
+          sub.style.display = 'block'
+        }
+}
+
+</script>
+</body>
+</html>
