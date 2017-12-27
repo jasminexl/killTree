@@ -7,6 +7,7 @@ http://www.zhangxinxu.com/wordpress/2013/06/%E4%BC%AA%E5%85%83%E7%B4%A0-%E8%A1%A
 
 3.div竖版导航条如何height=100%？
 --设父级元素height=100%
+--设position=absolute&top=0&bottom=0
 
 4.图片下方会存在4px的空白？
 --在块级元素内部的行内元素后存在一个空白节点，由于vertical-align默认值为baseline，图片下边缘就会与该空白节点的文字下边缘的位置对齐，下方就会产生空隙。而一般line-height是font-size的1.x倍。
@@ -23,3 +24,14 @@ http://www.zhangxinxu.com/wordpress/2013/06/%E4%BC%AA%E5%85%83%E7%B4%A0-%E8%A1%A
 
 3.两个logo中间有一条竖线
 --前一个logo设padding&&border(eg:border-right: 1px solid #adadad;)
+
+#12.19
+1.点击显示二级菜单，覆盖了一级菜单
+--不要设置一级菜单的height，让内容自动撑开
+
+2.login界面body高度不够，背景颜色无法填充
+--设置body高度&overflow:hidden
+
+2.vue组件溢出
+--当前解决方案：设置组件高度&overflow:srcoll -> 底部页面可能无法看全 ---> 设置footDiv（有高度）
+--最新解决方案：document.getElementById('container').style.height = document.getElementById('side').clientHeight + 'px'
