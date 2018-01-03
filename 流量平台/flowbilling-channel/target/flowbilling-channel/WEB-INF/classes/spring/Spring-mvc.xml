@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+  <!--springmvc驱动扫描包  -->
+  <mvc:annotation-driven />
+
+  <!--定义Controller扫描包,用户扫描Controller并创建代理对象 -->
+  <context:component-scan base-package="dongxin.flowbilling.channel.controller"/>
+
+  <!--当访问views中的页面时都进入拦截器-->
+  <mvc:interceptors>
+    <mvc:interceptor>
+      <mvc:mapping path="/**"/>
+      <mvc:exclude-mapping path="/user/login.do"/>
+      <mvc:exclude-mapping path="/user/exit.do"/>
+      <mvc:exclude-mapping path="/vail/autoImg.do"/>
+      <bean class="dongxin.flowbilling.channel.util.SecurityInterceptor"/>
+    </mvc:interceptor>
+    <mvc:interceptor>
+      <mvc:mapping path="/ChannelInfo/selectByChcode.do"/>
+      <bean class="dongxin.flowbilling.channel.util.SecurityInterceptor"/>
+    </mvc:interceptor>
+  </mvc:interceptors>
+  <!-- 定义跳转的文件的前后缀 ，视图模式配置-->
+  <!--<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
+    <!--&lt;!&ndash; 这里的配置我的理解是自动给后面action的方法return的字符串加上前缀和后缀，变成一个 可用的url地址 &ndash;&gt;-->
+    <!--<property name="prefix" value="/WEB-INF/views/" />-->
+    <!--<property name="suffix" value=".jsp" />-->
+  <!--</bean>-->
+
+</beans>
