@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="flowbillingChannel:war">
-    <output-path>$PROJECT_DIR$/../flowbillingChannel/target</output-path>
-    <root id="archive" name="flowbillingChannel.war">
-      <element id="artifact" artifact-name="flowbillingChannel:war exploded" />
-    </root>
-  </artifact>
-</component>
